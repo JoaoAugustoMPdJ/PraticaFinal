@@ -40,12 +40,12 @@ public class FrotaController {
     public void registrarUsoCombustivel(Veiculo veiculo, double litros, double precoLitro) {
         double custoTotal = litros * precoLitro;
         veiculo.setQuilometragem(veiculo.getQuilometragem() + litros);
-        // Poderia ser implementado o registro em um log de uso de combustível
+        
         System.out.println("Uso de combustível registrado para o veículo " + veiculo.getPlaca() + ": " + litros + " litros a R$" + precoLitro + " totalizando R$" + custoTotal);
     }
 
     public void registrarIncidente(Veiculo veiculo, String descricao) {
-        // Poderia ser implementado o registro em um log de incidentes
+        
         System.out.println("Incidente registrado para o veículo " + veiculo.getPlaca() + ": " + descricao);
     }
 }
